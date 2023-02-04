@@ -1,0 +1,121 @@
+##-------- ACESOS RAPIDOS ----------##
+##                                  ##
+##--------- SUBIR VOLUMEN ----------##
+XF86AudioRaiseVolume
+	amixer sset Master 5%+
+##--------- BAJAR VOLUMEN ----------##
+XF86AudioLowerVolume
+	amixer sset Master 5%-	
+##-------- SUBIR BRILLO ------------##
+XF86MonBrightnessUp
+	brightnessctl set +10
+##------- BAJAR BRILLO -------------##
+XF86MonBrightnessDown
+	brightnessctl set 10-
+##---------- PYTHON ----------------##
+super + c
+	python3 $HOME/vstudio/python/os/banco.py
+##---------- ICONOS ----------------##
+super + p
+	python3 $HOME/vstudio/python/kivy/iconos.py
+##---------- TELEGRAM --------------##
+super + k
+	xdg-open https://web.telegram.org
+##------------- GITHUB -------------##
+super + alt + g
+	xdg-open https://github.com
+##------- OBSIDIAN -----------------##
+super + l
+	Obsidian-1.1.9.AppImage
+##-------- MONODEVELOP -------------##
+super + m
+	monodevelop
+##---------- IDEA ------------------##
+super + n
+	./IntelliJ_IDEA/idea-IC-223.8214.52/bin/idea.sh
+##--------------- ARDUINO ----------##
+super + a
+	xdg-open $HOME/Documentos/arduino.pdf
+##------ ANDROID STUDIO ----------- ##                                  
+super + a
+	./apkstudio/android-studio/bin/studio.sh   
+##----------- APAGAR_SISTEMA -------##
+super + i
+	systemctl poweroff
+##---------- VSTUDIO ---------------##	
+super + v
+	code
+##------ GESTOR DE ARCHIVOS --------##
+super + e
+	nautilus
+##--------- DE .PY A .EXE ----------##
+super + a
+	autopytoexe
+##------------- ROFI ---------------##
+super + q
+    rofi -show drun
+##----------- VIRTUALBOX -----------##
+super + ª
+	virtualbox
+##-------- TERMINAL DE MATE --------##
+super + t
+	mate-terminal
+##------------ KITTY ---------------##
+alt + t
+	kitty
+##-------- GOOGLE-CHROME -----------##
+super + g
+	google-chrome
+##--------- YOUTUBE ----------------##
+super + r
+	xdg-open https://youtube.com &
+##------ REINCIAR SXHKD ------------##
+super + Escape
+	pkill -USR1 -x sxhkd
+##------ DISPLAY MANAGER -----------##
+super + x
+	bspc {quit,wm -r}
+##-------- MATAR VENTANA -----------##
+super + w
+	bspc node -{c,k}
+##-- ESTABLECER ESTADO DE VENTANA --##
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+##------- BANDERA DE NODOS ---------##
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+##------- NODO SALTO DE RUTA -------##
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+##---- ENFOCAR ESCRITORIOS ---------##
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+#-- ENFOCAR EL ULTIMO ESCRITORIO ---##
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+#-- ENFOCAR EL NODO MAS ANTIGUO ----##
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+##MOVER PROGRAMA A OTRA VENTANA(1-9)##
+super + {_,alt + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+##---- SELECCIONAR LA DIRECCION ----##
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+##---- SELECCIONAR LA RELACION -----##
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+##----- CANCELAR LA SELECCION ------##
+super + ctrl + space
+	bspc node -p cancel
+##------ EXPANDIR UNA VENTANA ------##
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+##-------- CONTRAER VENTANA --------##
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+##----- MOVER VENTANA FLOTANTE ----##
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
