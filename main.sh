@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# falta: Transparencias, chsh, polybar talvez, bat y lsd
-# agregar lineas en blanco: sed -i "/startup/G" zshrc * 5
-# final sed -i "74 s/$/plugins=(/" zshrc; sed -i "75 s/$/  zsh-autosuggestions/" zshrc; sed -i "76 s/$/)/" zshrc
-
-
 function copiar_config(){
 
    clear
@@ -116,17 +111,6 @@ function lsd () {
      echo "Opcion no valida";  
    fi
 }
-
-
-
-
-#wget https://gutl.jovenclub.cu/wp-content/uploads/2019/04/lsd_0.14.0_amd64.zip
-#cd lsd_0.14.0_amd64; sudo dpkg -i lsd_0.14.0_amd64.deb 
-#   rm lsd_0.14.0_amd64.zip -rf lsd_0.14.0_amd64
-
-
-
-
 
 
 # Si bspwm, rofi y nitrogen esta instalado va a ejecutar la funcion oh-my-zsh_rofi, si no los va a instalar
