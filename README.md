@@ -8,6 +8,6 @@ cd bspwm
 
 unzip rofi.zip; rm rofi.zip
 
-chmod +x 
-
 chmod +x main.sh 
+
+./main.sh
