@@ -135,7 +135,7 @@ function bat () {
       echo "Okey"
    
    else
-      echo "Opcion no valuda" 
+      echo "Opcion no valida" 
    fi
 
   
