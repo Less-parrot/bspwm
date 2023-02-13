@@ -132,7 +132,7 @@ function bat () {
       alias c="clear" >> $HOME/.zshrc
       alias cat="bat" >> $HOME/.zshrc
    
-   elif [[ $lsdluke == "n" ]] || [[ $lsdluke == "N" ]]; then
+   elif [[ $bat_var == "n" ]] || [[ $bat_var == "N" ]]; then
       echo "Okey"
    
    else
