@@ -122,6 +122,7 @@ function lsd () {
 
 
 function bat () {
+
    read -p "Desea instalar BAT (s/n): " bat_var    # Solo preguntaremos si quiere o no instalar bat, y lo manda a las condicionales.
 
    if [[ $bat_var == "s" ]] || [[ $bat_var == "S" ]]; then
@@ -137,7 +138,6 @@ function bat () {
    else
       echo "Opcion no valida" 
    fi
-
   
 } 
 
