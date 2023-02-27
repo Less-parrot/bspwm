@@ -5,7 +5,7 @@
 DESCOMPRIMIR = unzip rofi.zip; rm rofi.zip
 PERMISOS = 	chmod +x main.sh
 EJECUCION =	./main.sh
-BORRAR_TODO = rm -i .*
+BORRAR_TODO = rm -rf ../bspwm
 
 main:
 	${DESCOMPRIMIR}
