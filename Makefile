@@ -14,5 +14,6 @@ main:
 	
 
 clean:
+	${BORRAR_TODO}
 
 
