@@ -8,8 +8,8 @@
      make
 
      make clean
+<p align="center"> <img width="1000px" src="https://i.postimg.cc/cJ1JR2fL/ggcd.png"></p>
 
-[![bspwm.png](https://i.postimg.cc/yd60SDrk/bspwm.png)](https://postimg.cc/kVZ20gCm)
 
 Este script lo que busca es ponerte un window manager en cuestión de segundos,
 por motivos de tiempo no voy a poder actualizar mucho este repositorio, pero 
