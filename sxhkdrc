@@ -12,6 +12,9 @@ XF86MonBrightnessUp
 ##------- BAJAR BRILLO -------------##
 XF86MonBrightnessDown
 	brightnessctl set 10-
+##----------- LETRA ----------------##
+super + alt + l
+	letra	
 ##---------- PYTHON ----------------##
 super + c
 	python3 $HOME/vstudio/python/os/banco.py
@@ -20,7 +23,7 @@ super + p
 	python3 $HOME/vstudio/python/kivy/iconos.py
 ##---------- TELEGRAM --------------##
 super + k
-	xdg-open https://web.telegram.org
+	xdg-open https://web.telegram.org/z/#777000
 ##------------- GITHUB -------------##
 super + alt + g
 	xdg-open https://github.com
@@ -30,9 +33,9 @@ super + l
 ##-------- MONODEVELOP -------------##
 super + m
 	monodevelop
-##---------- IDEA ------------------##
+##---------- PYCHARM ------------------##
 super + n
-	./IntelliJ_IDEA/idea-IC-223.8214.52/bin/idea.sh
+	./Downloads/pycharm-community-2022.3.3/bin/pycharm.sh
 ##--------------- ARDUINO ----------##
 super + a
 	xdg-open $HOME/Documentos/arduino.pdf
